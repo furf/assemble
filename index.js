@@ -63,9 +63,7 @@ const multiplication = program([2, 3, 1, 5, 7, 0, 9, 3], { 4: 0 })
   .outbox()
   .jump('init')
 
-  .end([6, 5, 0, 27]);
+  .print()
+  // .end([6, 5, 0, 27]);
 
 console.log(multiplication);
-
-
-
