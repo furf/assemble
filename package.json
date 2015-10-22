@@ -1,0 +1,15 @@
+{
+  "name": "assemble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dave Furfero <furf@furf.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.23"
+  }
+}
