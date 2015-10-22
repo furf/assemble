@@ -38,32 +38,43 @@ const log = require('./lib/utils').log;
 
 
 // Not working yet
-const multiplication = program([2, 3, 1, 5, 7, 0, 9, 3], { 4: 0 })
+// const multiplication = program([2, 3, 1, 5, 7, 0, 9, 3], { 4: 0 })
+//
+//   .label('init')
+//   .inbox()
+//   .copyto(0)
+//   .inbox()
+//   .copyto(1)
+//   .copyfrom(4)
+//   .copyto(3)
+//
+//   .label('increment')
+//   .copyfrom(0)
+//   .jumpifzero('ship')
+//
+//   .copyfrom(3)
+//   .add(1)
+//   .copyto(3)
+//   .bumpdown(0)
+//   .jump('increment')
+//
+//   .label('ship')
+//   .copyfrom(1)
+//   .outbox()
+//   .jump('init')
+//
+//   .print()
+//   // .end([6, 5, 0, 27]);
+//
+// console.log(multiplication);
 
-  .label('init')
+
+
+const tester = program([3, 2 ,1], { 6: 0 })
   .inbox()
-  .copyto(0)
+  .copyto('fart')
   .inbox()
-  .copyto(1)
-  .copyfrom(4)
-  .copyto(3)
-
-  .label('increment')
-  .copyfrom(0)
-  .jumpifzero('ship')
-
-  .copyfrom(3)
-  .add(1)
-  .copyto(3)
-  .bumpdown(0)
-  .jump('increment')
-
-  .label('ship')
-  .copyfrom(1)
-  .outbox()
-  .jump('init')
-
+  .copyto(['fart'])
   .print()
-  // .end([6, 5, 0, 27]);
-
-console.log(multiplication);
+  .end([])
+console.log(tester);
